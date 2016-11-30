@@ -1,0 +1,19 @@
+<html>
+	<head> 
+		<title>Company Maintenance</title>
+		<link href="{{ url_for('static', filename='css/bootstrap-theme.min.css') }}" rel="stylesheet" />
+		<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
+		<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+	</head>
+	<body>
+	<div id="header">
+	<a href="/"><img src="{{ url_for('static', filename='img/home.png') }}"></a>
+		<h1>Company Maintenance</h1>
+		<div id="login"> {{ login | safe }}</div>
+	</div>
+		<div class="container">
+		<br/><br/><br/><br/>
+		{% block content %} {% endblock %}
+		</div>
+	</body>
+</html>

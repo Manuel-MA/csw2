@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Welcome to the staff company management</h1>
+
+<form action="/new/intership" method="post">
+	First name: <br/>
+	<input type="text" placeholder="First name" name="name"><br/>
+	Last name: <br/>
+	<input type="text" placeholder="Last name" name="surname"><br/><!--value="{{ request.form.password }}"-->
+	Sending university: <br/>
+	<input type="text" placeholder="University" name="university"> <br/>
+	Birth date: <br/>
+	<input type="date" placeholder="Birth date" name="birthday"><br/>
+	E-mail:  <br/>
+	<input type="email" placeholder="E-mail" name="email"><br/>
+	Department: <br/>
+	<input type="text" placeholder="Department" name="department"><br/><br/>
+	<input type="hidden" name="table" value="{{ tableInput }}">
+	<input class="btn btn-default" type="submit" value="Add intership">
+	<a href="/display/intership" class="btn btn-default">Back</a>
+</form>
+{% endblock %}

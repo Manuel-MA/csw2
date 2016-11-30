@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Welcome to the staff company management</h1>
+
+<form action="/edit/worker" method="post">
+	First name: <br/>
+	<input type="text" placeholder="First name" name="name" value="{{ name }}"><br/>
+	Last name: <br/>
+	<input type="text" placeholder="Last name" name="surname" value="{{ surname }}"><br/><!--value="{{ request.form.password }}"-->
+	Actual post: <br/>
+	<input type="text" placeholder="Post" name="post" value="{{ post }}"> <br/>
+	Birth date: <br/>
+	<input type="date" placeholder="Birth date" name="birthday" value="{{ birthday }}"><br/>
+	E-mail:  <br/>
+	<input type="email" placeholder="E-mail" name="email" value="{{ email }}"><br/>
+	Department: <br/>
+	<input type="text" placeholder="Department" name="departament" value="{{ department }}"><br/><br/>
+	<input type="hidden" name="table" value="{{ table }}">
+	<input type="hidden" name="id" value="{{ id }}">
+	<input class="btn btn-default" type="submit" value="Update worker">
+	<a href="/display/worker" class="btn btn-default">Back</a>
+</form>
+{% endblock %}

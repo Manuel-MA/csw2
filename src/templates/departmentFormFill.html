@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Welcome to the staff company management</h1>
+
+<form action="/edit/department" method="post">
+	Name: <br/>
+	<input type="text" placeholder="Name" name="name" value="{{ name }}"><br/>
+	Building: <br/>
+	<input type="text" placeholder="Building" name="location" value="{{ location }}"><br/><!--value="{{ request.form.password }}"-->
+	<input type="hidden" name="table" value="{{ table }}">
+	<input type="hidden" name="id" value="{{ id }}">
+	<input class="btn btn-default" type="submit" value="Update department">
+	<a href="/display/department" class="btn btn-default">Back</a>
+</form>
+{% endblock %}

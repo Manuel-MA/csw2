@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Welcome to the staff company management</h1>
+
+<div id="center">
+	<div id="menuCenter">
+		<a href="/display/department"><img src="{{ url_for('static',
+      filename='img/department.png') }}">
+		<br/>
+		<h3>Departments</h3>
+		</a>
+		
+	</div>
+	<div id="menuCenter">
+		<a href="/display/worker"><img src="{{ url_for('static',
+      filename='img/worker.png') }}">
+		<br/>
+		<h3>Workers</h3>
+		</a>
+		
+	</div>
+	<div id="menuCenter">
+		<a href="/display/intership"><img src="{{ url_for('static',
+      filename='img/intership.png') }}">
+		<br/>
+		<h3>Trainee students</h3>
+		</a>
+		
+	</div>
+</div>
+{% endblock %}

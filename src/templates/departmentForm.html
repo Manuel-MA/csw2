@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Welcome to the staff company management</h1>
+
+<form action="/new/department" method="post">
+	Name: <br/>
+	<input type="text" placeholder="Name" name="name"><br/>
+	Building: <br/>
+	<input type="text" placeholder="Building" name="location"><br/><!--value="{{ request.form.password }}"-->
+	<input type="hidden" name="table" value="{{ tableInput }}">
+	<input class="btn btn-default" type="submit" value="Add department">
+	<a href="/display/department" class="btn btn-default">Back</a>
+</form>
+{% endblock %}
