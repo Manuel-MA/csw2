@@ -266,7 +266,7 @@ def fillForms(table=None,id=None):
 	return render_template('noLogin.html'),200	
 	
 @app.route("/redirect", methods=['GET', 'POST'])
-def redirect():
+def redirect2():
 	try:
 		if (session['name']):
 			login = logged
