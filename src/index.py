@@ -219,7 +219,7 @@ def editData(table=None):
 			bday = (request.form['birthday'])
 			mail = (request.form['email'])
 			department = (request.form['department'])
-			cursor.execute("UPDATE intership SET name = ?, surname = ?, university = ?, dateOfBirth = ?, email = ?, department = ? WHERE id = ?", (name, surname, university, bday, mail, departament, id))
+			cursor.execute("UPDATE intership SET name = ?, surname = ?, university = ?, dateOfBirth = ?, email = ?, department = ? WHERE id = ?", (name, surname, university, bday, mail, department, id))
 			db.commit()
 			return showTables('intership')
 		else:
