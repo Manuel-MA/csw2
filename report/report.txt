@@ -1,0 +1,44 @@
+REPORT:
+
+Web-app description:
+
+	The web page I have made is a maintenance program from a random company. It has a SQLite3 database to allow the data persistence. The web page works as follows:
+
+	Firsty, it has a main page which shows three categories that the user can open and see its content.
+	If the user clicks in any link, it will be redirected to another page in wich a table is displayed with all the contents inside a SQL table.Then, the user has different options to do,
+	user can add, update, or delete any register that he or she wants. But, if user wants to do anything with data, he or she should be logged before. If user tries whatever of this actions
+	and is not logged, the web page is going to redirect him or her to a Login form. Once the user will be logged, he or she will can operate with the database as he or she wants.
+	
+	Add register:
+	If the user clicks in the "add" button which is below the table, another page is shown.
+	There is an empty form that user has to fill and send it to store the data.
+	
+	Edit register:
+	If the user clicks in a "edit" button which is in each table register, another page is shown.
+	There is a filled of data form that user can update and send it to store the data.
+
+	Delete register:
+	There is a button called "delete" in each table register that if the user clicks it, this register is deleted.
+
+	User can log out at any moment through a "logout" button at the top-right web page corner.
+
+Design:
+	I built this web-app mostly as the other one. I have the root directory, in which is placed "index.py" (the main program).There are also two folders, first the 'templates' folder
+ 	in which are all the templates are used in the web app, and the second is the 'static' folder in which are other more four folders called 'css', 'fonts', 'img' and 'js'. 
+	Inside of these folders are the css archives, fonts archives, pictures and javaScript archives respectively.
+	
+Enhancements:
+	I would improve the logging treatment because it does not redirect you to the same page you were before log in.
+	I would also like to improve the visual appearance.
+
+Critical evaluation:
+	I think I could do much more in this coursework but I didn't manag the time very well. Nevertheless I think I have achieved the most of the requirements properly.
+
+Personal evaluation:
+	All I know about python database access I have learnt with this coursework. I found a lot of problems during I was doing the web app, for example how to manage databases. 
+	All the challenges I faced was solved looking for it on internet, specially on stackoverflow.
+
+Summary:
+	http://www.w3schools.com/
+	http://stackoverflow.com/
+	https://github.com/
